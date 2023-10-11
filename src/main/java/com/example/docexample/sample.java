@@ -1,0 +1,13 @@
+package com.example.docexample;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class sample {
+
+    @GetMapping("/hello")
+    public String  hello(){
+        return "hello World ";
+    }
+}
